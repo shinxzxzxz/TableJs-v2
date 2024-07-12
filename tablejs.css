@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: Poppins, sans-serif;
+}
+
+.tjs-table-element {
+    width: 100%;
+}
+
+th.tjs-sort-disabled {
+    cursor: not-allowed;
+}
+
+th.tjs-sort-enabled {
+    cursor: pointer;
+}
+
+th.tjs-sort-ascending::after {
+    content: " ▾";
+}
+
+th.tjs-sort-descending::after {
+    content: " ▴";
+}
+
+.tjs-colvis-list {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    max-height: calc(100vh - 20rem);
+    max-width: fit-content;
+}
+
+.tjs-colvis-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+    pointer-events: none;
+}
+
+.tjs-colvis-list .tjs-colvis-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.tjs-colvis-list .tjs-colvis-item span {
+    margin-left: 0.75rem;
+    text-transform: capitalize;
+}
+
+.tjs-colvis-svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.tjs-header-cell {
+    display: table-cell;
+    white-space: nowrap;
+}
+
+.tjs-row-cell {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    white-space: nowrap;
+}
+
+.tjs-row-visible {
+    display: table-row;
+}
+
+.tjs-row-dummy {
+    text-align: center;
+}
+
+.tjs-row-hidden {
+    display: none;
+}
+
+.tjs-data-cell {
+    white-space: nowrap;
+}
+
+.tjs-data-visible {
+    display: table-cell;
+}
+
+.tjs-data-hidden {
+    display: none;
+}
+
+.tjs-header-visible {
+    display: table-cell;
+}
+
+.tjs-header-visible {
+    display: table-cell;
+}
+
+.tjs-header-hidden {
+    display: none;
+}
